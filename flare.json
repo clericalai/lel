@@ -1,0 +1,550 @@
+{
+  "name": "EvictionAction",
+  "anyNOTall": false,
+  "children": [
+    {
+      "name": "Grounds",
+      "anyNOTall": true,
+      "children": [
+        {
+          "name": "Nonpayment",
+          "anyNOTall": false,
+          "children": [
+            {
+              "name": "RentObligation",
+              "description": "Was the tenant obligated to pay rent?",
+              "anyNOTall": false,
+              "children": [
+                {
+                  "name": "RentAccruedDuringPreviousEviction"
+                },
+                {
+                  "name": "AbsenceOfTimelyDemand"
+                },
+                {
+                  "name": "CourseOfConduct"
+                },
+                {
+                  "name": "DeMinimusRent"
+                },
+                {
+                  "name": "ImproperRentIncrease",
+                  "anyNOTall": false,
+                  "children": [
+                    {
+                      "name": "ImproperRentIncreaseNotice"
+                    },
+                    {
+                      "name": "WaiverRentIncreaseNotice"
+                    },
+                    {
+                      "name": "RetaliatoryRentIncrease"
+                    }
+                  ]
+                },
+                {
+                  "name": "ImproperFees",
+                  "anyNOTall": false,
+                  "children": [
+                    {
+                      "name": "LateFees",
+                      "anyNOTall": false,
+                      "children": [
+                        {
+                          "name": "RegulatedLateFees"
+                        },
+                        {
+                          "name": "LiquidatedDamagesLateFees"
+                        },
+                        {
+                          "name": "UsuriousLateFees"
+                        },
+                        {
+                          "name": "WaiverLateFees"
+                        },
+                        {
+                          "name": "ProperlyWithheldRentLateFees"
+                        }
+                      ]
+                    },
+                    {
+                      "name": "MaintenanceFees"
+                    },
+                    {
+                      "name": "FeesViolateStatute"
+                    },
+                    {
+                      "name": "Unconscionable"
+                    },
+                    {
+                      "name": "AdhesionContract"
+                    },
+                    {
+                      "name": "FeesNotConsideredRent"
+                    },
+                    {
+                      "name": "AssessedRentForGuest"
+                    },
+                    {
+                      "name": "RentPriorLeases"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "name": "RentPayment",
+              "anyNOTall": false,
+              "children": [
+                {
+                  "name": "AccordAndSatisfaction"
+                },
+                {
+                  "name": "AgreementForRepairsInLieuOfRent"
+                },
+                {
+                  "name": "TimelyTenderRefused"
+                },
+                {
+                  "name": "AcceptancePartialPaymentWaiver"
+                },
+                {
+                  "name": "AcceptanceLaterRentWaiver"
+                },
+                {
+                  "name": "TenantPaymentUtility"
+                },
+                {
+                  "name": "TenantPaidTaxes"
+                },
+                {
+                  "name": "TenantGarnishmentDueToLandlordDebt"
+                }
+              ]
+            },
+            {
+              "name": "LandlordBreach",
+              "anyNOTall": false,
+              "children": [
+                {
+                  "name": "RentAbatementExclusion"
+                },
+                {
+                  "name": "BreachOfHabitability"
+                },
+                {
+                  "name": "BreachConditionPrecedent"
+                },
+                {
+                  "name": "ViolationTenantPrivacy"
+                },
+                {
+                  "name": "ViolationTenantQuietEnjoyment"
+                },
+                {
+                  "name": "ViolationTenantSecurity"
+                },
+                {
+                  "name": "ViolationUnlawfulActivity"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "HoldingOver",
+          "anyNOTall": false,
+          "children": [
+            {
+              "name": "LeaseViolation",
+              "anyNOTall": false,
+              "children": [
+                {
+                  "name": "LackOfTerminationNotice"
+                },
+                {
+                  "name": "LeaseObligation",
+                  "anyNOTall": false,
+                  "children": [
+                    {
+                      "name": "UnconscionableRule"
+                    },
+                    {
+                      "name": "IllegalLeaseProvision"
+                    },
+                    {
+                      "name": "LackOfClearRules"
+                    },
+                    {
+                      "name": "LeaseModification",
+                      "anyNOTall": false,
+                      "children": [
+                        {
+                          "name": "ImpliedModification"
+                        },
+                        {
+                          "name": "UnilateralModification"
+                        }
+                      ]
+                    },
+                    {
+                      "name": "TypeOfViolation",
+                      "anyNOTall": false,
+                      "children": [
+                        {
+                          "name": "GuestAndTrespassRules"
+                        },
+                        {
+                          "name": "NonpaymentOfUtilities"
+                        },
+                        {
+                          "name": "NuisanceOrEndangerment"
+                        },
+                        {
+                          "name": "EmergencyPoliceCalls"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "name": "LeaseBreach",
+                  "anyNOTall": false,
+                  "children": [
+                    {
+                      "name": "NonMaterialBreach"
+                    },
+                    {
+                      "name": "BreachCausedByLandlordBreach"
+                    },
+                    {
+                      "name": "RemedyOfCondition"
+                    },
+                    {
+                      "name": "WaiverOfBreach",
+                      "anyNOTall": false,
+                      "children": [
+                        {
+                          "name": "AcceptanceOfRent"
+                        },
+                        {
+                          "name": "ExecutingRent"
+                        },
+                        {
+                          "name": "Demanding Rent"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "name": "ExpiredLease",
+              "anyNOTall": false,
+              "children": [
+                {
+                  "name": "NoticePeriod"
+                },
+                {
+                  "name": "LeaseRenewalProvision"
+                },
+                {
+                  "name": "RevocationOfTenantNoticeToQuit"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "CodeComplianceDeprivesUse"
+        },
+        {
+          "name": "TenantCausedCodeViolation"
+        },
+        {
+          "name": "SexOffender"
+        }
+      ]
+    },
+    {
+      "name": "Preconditions",
+      "anyNOTall": false,
+      "children": [
+        {
+          "name": "LandlordRequirements",
+          "anyNOTall": false,
+          "children": [
+            {
+              "name": "LandlordAddressDisclosure",
+              "anyNOTall": false,
+              "children": [
+                {
+                  "name": "LandlordAddressDisclosureFailure"
+                },
+                {
+                  "name": "PostOfficeBox"
+                },
+                {
+                  "name": "ChangeInOwnership"
+                },
+                {
+                  "name": "FailureToPleadDisclosure"
+                },
+                {
+                  "name": "DisclosureOfPrinciple"
+                }
+              ]
+            },
+            {
+              "name": "RentalLicense"
+            }
+          ]
+        },
+        {
+          "name": "AreaJurisdiction",
+          "anyNOTall": false,
+          "children": [
+            {
+              "name": "LackOfAreaJurisdiction"
+            },
+            {
+              "name": "LackOfJurisdictionIndianTrust"
+            }
+          ]
+        },
+        {
+          "name": "SubjectMatterJurisdiction",
+          "anyNOTall": false,
+          "children": [
+            {
+              "name": "ComplexClaims"
+            },
+            {
+              "name": "StatuteOfLimitations"
+            },
+            {
+              "name": "Laches"
+            }
+          ]
+        },
+        {
+          "name": "ProperParties",
+          "anyNOTall": false,
+          "children": [
+            {
+              "name": "ProperPlaintiff",
+              "anyNOTall": false,
+              "children": [
+                {
+                  "name": "RealPartyInInterest"
+                },
+                {
+                  "name": "FictitiousNameRegistration",
+                  "anyNOTall": false,
+                  "children": [
+                    {
+                      "name": "ForeignCorporation"
+                    }
+                  ]
+                },
+                {
+                  "name": "UnauthorizedPracticeOfLaw",
+                  "anyNOTall": false,
+                  "children": [
+                    {
+                      "name": "ManagementAgent"
+                    },
+                    {
+                      "name": "Corporations"
+                    },
+                    {
+                      "name": "LLC"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "name": "ProperDefendant",
+              "anyNOTall": false,
+              "children": [
+                {
+                  "name": "Subtenant"
+                }
+              ]
+            },
+            {
+              "name": "FailureToJoinParty"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Service",
+      "anyNOTall": false,
+      "children": [
+        {
+          "name": "ContentOfNoticeToVacate",
+          "anyNOTall": false,
+          "children": [
+            {
+              "name": "RequiredLanguage"
+            },
+            {
+              "name": "Signature"
+            },
+            {
+              "name": "DateToVacate"
+            }
+          ]
+        },
+        {
+          "name": "WaiverOfNoticeToVacate",
+          "anyNOTall": false,
+          "children": [
+            {
+              "name": "AcceptanceOfRent",
+              "anyNOTall": false,
+              "children": [
+                {
+                  "name": "LandlordDeposit"
+                },
+                {
+                  "name": "NonwaiverClauseLease"
+                }
+              ]
+            },
+            {
+              "name": "OtherEvidenceContinuingRelationship"
+            }
+          ]
+        },
+        {
+          "name": "PrematureNotice"
+        },
+        {
+          "name": "SummonsContent"
+        },
+        {
+          "name": "ServiceOfSummons",
+          "anyNOTall": false,
+          "children": [
+            {
+              "name": "LandlordPreparationSummons"
+            }
+          ]
+        },
+        {
+          "name": "ServiceOfNoticeToVacate",
+          "anyNOTall": false,
+          "children": [
+            {
+              "name": "NoticeToPHA"
+            }
+          ]
+        },
+        {
+          "name": "Complaint",
+          "anyNOTall": false,
+          "children": [
+            {
+              "name": "WhoMayCommence"
+            },
+            {
+              "name": "DescriptionOfPremises"
+            },
+            {
+              "name": "ComplianceStatute"
+            },
+            {
+              "name": "AttachedNotice"
+            },
+            {
+              "name": "AttachedLease"
+            },
+            {
+              "name": "Signature"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "OtherDefenses",
+      "anyNOTall": false,
+      "children": [
+        {
+          "name": "Mootness"
+        },
+        {
+          "name": "PlaintiffDefault"
+        },
+        {
+          "name": "Retaliation"
+        },
+        {
+          "name": "Discrimination"
+        },
+        {
+          "name": "ReasonableAccommodation"
+        },
+        {
+          "name": "Domestic Abuse"
+        },
+        {
+          "name": "LeaseTerminationProvisionViolation",
+          "anyNOTall": false,
+          "children": [
+            {
+              "name": "RightToCureLease"
+            },
+            {
+              "name": "NoTerminationProvisionLease"
+            }
+          ]
+        },
+        {
+          "name": "Foreclosure",
+          "anyNOTall": false,
+          "children": [
+            {
+              "name": "ForeclosureNoticeProspectiveTenants"
+            }
+          ]
+        },
+        {
+          "name": "EquityRedemption"
+        },
+        {
+          "name": "TenantInPossession3Years"
+        },
+        {
+          "name": "ServiceMemberCivilRelief"
+        },
+        {
+          "name": "ViolationOfConsumerFraudStatute"
+        },
+        {
+          "name": "Stay",
+          "anyNOTall": false,
+          "children": [
+            {
+              "name": "Bankruptcy"
+            },
+            {
+              "name": "ParallelLitigation"
+            }
+          ]
+        },
+        {
+          "name": "LeaseSignedUnderDuress"
+        },
+        {
+          "name": "UniformRelocationAct"
+        }
+      ]
+    }
+  ]
+}
